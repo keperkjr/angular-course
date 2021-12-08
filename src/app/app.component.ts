@@ -7,7 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     data = {
-        title: 'Test title'
+        title: 'Angular Core Deep Dive'
     };
-    courseTitle = 'Angular Core Deep Dive';
+    
+    onLogoClicked() {
+        alert('Hello World');
+    }
+
+    onKeyUp(newTitle: string) {
+        this.data.title = newTitle;
+    }
 }
